@@ -1,0 +1,11 @@
+{
+    "young__Above county median": "This group consists of respondents aged 18–38 (young age group) and have an income category of above county median.",
+    "middle__Above county median": "This group consists of respondents aged 39–60 (middle age group) and have an income category of above county median.",
+    "middle__Below county median": "This group consists of respondents aged 39–60 (middle age group) and have an income category of below county median.",
+    "young__Refused/ Did not answer": "This group consists of respondents aged 18–38 (young age group) and have an income category of refused/ did not answer.",
+    "young__Below county median": "This group consists of respondents aged 18–38 (young age group) and have an income category of below county median.",
+    "middle__Refused/ Did not answer": "This group consists of respondents aged 39–60 (middle age group) and have an income category of refused/ did not answer.",
+    "old__Above county median": "This group consists of respondents aged 61–87 (old age group) and have an income category of above county median.",
+    "old__Below county median": "This group consists of respondents aged 61–87 (old age group) and have an income category of below county median.",
+    "old__Refused/ Did not answer": "This group consists of respondents aged 61–87 (old age group) and have an income category of refused/ did not answer."
+}

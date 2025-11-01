@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "simple": {
+      "format": "%(levelname)s: %(message)s"
+    },
+    "detailed": {
+      "format": "%(asctime)s [%(levelname)s] %(name)s:%(lineno)d - %(message)s",
+      "datefmt": "%Y-%m-%dT%H:%M:%S%z"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "level": "INFO",
+      "formatter": "simple",
+      "stream": "ext://sys.stdout"
+    },
+    "debugFile": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "level": "DEBUG",
+      "formatter": "detailed",
+      "filename": "athena-debug.log",
+      "maxBytes": 1000000,
+      "backupCount": 5,
+      "encoding": "utf-8"
+    },
+    "infoFile": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "level": "INFO",
+      "formatter": "detailed",
+      "filename": "athena-info.log",
+      "maxBytes": 1000000,
+      "backupCount": 5,
+      "encoding": "utf-8"
+    }
+  },
+  "root": {
+    "level": "INFO",
+    "handlers": ["console", "infoFile", "debugFile"]
+  }
+}
+
